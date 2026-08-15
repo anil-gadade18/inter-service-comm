@@ -19,4 +19,9 @@ public class ProviderController {
         System.out.println("Provider service called on port : "+port);
         return "Provider Service called on port : "+port+" , Instance value : "+INSTANCE_VAlUE;
     }
+
+    @GetMapping("/hello")
+    public String sayHelloFromProviderService(){
+        return "Hello from provider-service.";
+    }
 }
