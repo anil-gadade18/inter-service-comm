@@ -11,4 +11,10 @@ public class ConsumerController {
     public String getInstanceInfo(){
         return "Hello from consumer-service.";
     }
+
+    @GetMapping("hello")
+    public String sayHello(){
+        return "Hello Everyone!!!";
+    }
+
 }
